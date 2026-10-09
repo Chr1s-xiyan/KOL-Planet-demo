@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>达人库 V0 · 三端协作 Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-role="brand">
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="role-mark" id="roleMark">品牌</div>
+      <div class="topbar-title">
+        <strong>达人库 V0</strong>
+        <span class="role-name" id="roleName">品牌端</span>
+      </div>
+      <span class="badge-demo">演示数据</span>
+    </div>
+    <div class="topbar-right">
+      <div class="role-switch" id="roleSwitch">
+        <button type="button" class="role-btn" data-role="brand">品牌端</button>
+        <button type="button" class="role-btn" data-role="ops">平台中台</button>
+        <button type="button" class="role-btn" data-role="creator">达人端</button>
+      </div>
+      <button type="button" class="btn btn-ghost" id="btnReset">重置演示</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div id="sidebarNav" class="sidebar-nav"></div>
+      <div class="sidebar-foot">
+        <div class="sidebar-foot-title">本 Demo 不做</div>
+        <ul>
+          <li>支付 / 合同 / 结算</li>
+          <li>内容提交与审核</li>
+          <li>完整品牌后台与站内 IM</li>
+          <li>系统代发邀约（只登记触达结果）</li>
+          <li>AI 自动匹配与匹配分</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="content">
+      <div class="stepbar" id="stepbar"></div>
+      <div class="view" id="view"></div>
+    </main>
+  </div>
+
+  <div id="modalRoot"></div>
+  <div id="toastWrap" class="toast-wrap"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
